@@ -1,0 +1,215 @@
+/* overrides default browser margins, border and padding*/
+ html, main, body {
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+ * {
+     box-sizing: border-box;
+}
+ body {
+     margin: 0;
+}
+/* heading styles */
+ h1, h2, h3, h4, h5, h6 {
+     text-align: center;
+     font-family: Verdana, Geneva, sans-serif;
+     padding: 0% 5%;
+}
+ p {
+     font-family: Verdana, Geneva, sans-serif;
+     font-size: 17px;
+     padding: 0% 5%
+}
+/* unvisited link */
+ a:link {
+     color: #0066ff;
+}
+/* visited link */
+ a:visited {
+     color: #0066ff;
+}
+/* mouse over link */
+ a:hover {
+     color: #0066ff;
+}
+/* selected link */
+ a:active {
+     color: #0066ff;
+}
+/* new menu */
+ #centeredmenu {
+    /* float:left;
+     disabled for testing, makes content slide inderneath */
+     width:100%;
+     background:#000;
+     overflow:hidden;
+     position:relative;
+}
+ #centeredmenu ul {
+     clear:left;
+     float:left;
+     list-style:none;
+     margin:0;
+     padding:0px;
+     position:relative;
+     left:50%;
+     text-align:center;
+}
+ #centeredmenu ul li {
+     display:block;
+     float:left;
+     list-style:none;
+     margin:0;
+     padding:0;
+     position:relative;
+     right:50%;
+}
+ #centeredmenu ul li a {
+     display:block;
+     margin:0 0 0 1px;
+     padding:3px 10px;
+     background:#000;
+     color:#fff;
+     padding: 10px 15px 10px 15px;
+     font-family: 'Archivo', sans-serif;
+     font-size:24px;
+     text-transform: uppercase;
+     text-decoration:none;
+     line-height:1.3em;
+}
+ #centeredmenu ul li a:hover {
+     background-color: #0066ff;
+     color: #fff;
+}
+ #centeredmenu ul li a.active, #centeredmenu ul li a.active:hover {
+     color:#fff;
+     background:#000;
+     font-weight:bold;
+}
+/* styling for body elements */
+ header {
+     height: auto;
+     width: 100%;
+     text-align: center;
+     padding: 20px;
+     background-color: #bfbfbf;
+     background-image: url("imgs/oavv3DC.jpg");
+}
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* sets a background img
+    background-image: url("./imgs/backgroundImg.jpg");
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+ footer {
+     display: block;
+     padding: 20px;
+     background-color: #000;
+     color: #fff;
+    /* box-shadow: 0 50vh 0 50vh #000;
+     */
+     background-image: url("imgs/oavv3DC.jpg");
+     border-top: 2px outset grey;
+}
+#footerContent {
+  text-align: center;
+  margin: 5% 20% 5% 20%;
+}
+#footerNav {
+    text-align: center;
+}
+ #copyrightBlock {
+     display: block;
+     padding-top: 20px;
+     color: #fff;
+     text-align: center;
+}
+/* image responsive */
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+ .column {
+     flex: 25%;
+     max-width: 25%;
+     padding: 0 4px;
+}
+ .column img {
+     margin-top: 8px;
+     vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+     .column {
+         flex: 50%;
+         max-width: 50%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+     .column {
+         flex: 100%;
+         max-width: 100%;
+    }
+}
+ .content {
+     padding: 20px 10px 20px 10px;
+     margin: 5% 10% 5% 10%;
+     background-color:rgba(191, 191, 191, 0.8);
+     border-radius: 5px;
+}
+ .container {
+     border-radius: 5px;
+     background-color:rgba(191, 191, 191, 0.8);
+     padding: 20px 10px 20px 10px;
+     margin: 5% 15% 5% 15%;
+}
+/* responsive image styles */
+ .responsive {
+     width: auto;
+     border-radius: 6px;
+}
+ .responsive2 {
+     height: auto;
+     width: 95%;
+     border-radius: 6px;
+}
+ .gallery {
+     border: solid #000;
+     border-width: 1px;
+     border-radius: 6px;
+}
+ #banner {
+     width: 75%;
+     height: auto;
+}
+/* contact form */
+ input[type=text], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+ input[type=submit] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ input[type=submit]:hover {
+     background-color: #45a049;
+}
